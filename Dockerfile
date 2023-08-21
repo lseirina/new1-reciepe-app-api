@@ -24,6 +24,7 @@ RUN python -m venv /py && \
     apk del .tmp-build-deps && \
     mkdir -p /vol/web/media && \
     mkdir -p /vol/web/static && \
+    chmod -R 755 /vol && \
     chmod -R +x /scripts
 
 
